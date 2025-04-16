@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6"></div>
+
+        <div class="col-sm-12 col-lg-6">
+            <div>
+                <label for="product-name-txt" class="form-label">Product Name</label>
+                <input id="product-name-txt" class="form-control" [(ngModel)]="product.name"  type="text">
+            </div>
+            <div>
+                <label for="product-name-txt" class="form-label">Product description</label>
+                <input id="product-description-txt" class="form-control" [(ngModel)]="product.description" type="text">
+            </div>
+            <div>
+                <button (click)="register()" class="btn btn-primary mt-3" >Register</button>
+            </div>
+            <div>{{product.name}}</div>
+        </div>
+    </div>
+</div>
